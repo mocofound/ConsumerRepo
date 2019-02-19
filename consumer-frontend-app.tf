@@ -10,7 +10,7 @@
 
 variable "number_of_instances" {
   description = "Number of instances to create and attach to Consumer ELB"
-  default     = 2
+  default     = 3
 }
 
 variable "name" {
@@ -20,8 +20,9 @@ variable "name" {
 
 module "elb" {
   source  = "app.terraform.io/aharness-org/consumer-elb/aws"
-  version = "1.9"
+  #version = "1.13"
   name = "${var.name}-elb"
+  environment = "${var.environment}"
   
   # ELB attachments
   number_of_instances = "${var.number_of_instances}"
