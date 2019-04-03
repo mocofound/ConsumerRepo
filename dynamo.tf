@@ -28,6 +28,6 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
 
   tags = {
     Name        = "${var.org}-dynamodb-table-1"
-    Environment = "production"
+    Environment = "productionHello"
   }
 }
