@@ -10,7 +10,7 @@
 
 variable "number_of_instances" {
   description = "Number of instances to create and attach to Consumer ELB"
-  default     = 3
+  default     = 2
 }
 
 variable "name" {
