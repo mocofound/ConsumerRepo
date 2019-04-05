@@ -34,6 +34,6 @@ resource "aws_instance" "web" {
   tags {
     Name = "Development Instance"
     Owner = "Solutions Engineer"
-    TTL = "2"
+    TTL = "3"
   }
 }
